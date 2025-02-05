@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'monocraft';
+    background-image: url("End_Poem_background.png");
+    background-position: center;
+    background-size: 70%;
+    animation: fundoInfinito 30s infinite ease-out;
+}
+
+@keyframes fundoInfinito {
+    0% {
+        background-position-y: 0%;
+    }
+
+    100% {
+        background-position-y: 100%;
+    }
+
+}
+
+.borda {
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    color: rgb(33, 206, 218);
+}
+
+h5 {
+    color: #1cb857;
+}
+
+#centraliza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#butao {
+    font-size: 12px;
+    padding: 3px 4px;
+    background-image: url(butao.png);
+    font-family: "monocraft";
+    color: #fff;
+    border-color: #AAA #565656 #565656 #AAA;
+    text-shadow: 3px 3px #4C4C4C;
+}
+
+#butao:hover {
+
+    background-image: url(butaoclicado.png);
+    border-color: #BDC6FF #59639A #59639A #BDC6FF;
+}
