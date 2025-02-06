@@ -9,25 +9,42 @@
 </head>
 
 <body>
-    <div id="centraliza">
-        <input type="button" id="butao" name="botao" value="Começar" onclick="tocaAudio()">
-    </div>
-<div class="borda">
-    <header>
-        <h1>Yuri anael ramos</h1>
-    </header>
     <section>
-        <div>
-            <h5>Junior Frontend Developer<h5>
+        <div id="centraliza">
+            <input type="button" id="butao" name="botao" value="Começar" onclick="tocaAudio()">
         </div>
+
+                            <div id="sumir">
+                                <header>
+                                    <h1>Yuri anael ramos</h1>
+                                </header>
+
+                                <div>
+                                    <p id="verde">Junior Frontend Developer
+                                    <p>
+                                    <p id="azul">Curitiba <br> brasil <br> @Veferogamer@gmail.com </p>
+                                    <p id="verde">Skills <strong>Issue</strong></p>
+                                    <p id="azul">HTML<strong>ama um lobinho</strong>CSS<strong>ama um lobinho</strong>JAVASCRIPT<strong>ama um lobinho</strong>WEB DESIGN</p>
+                                    <p id="verde">Education</p>
+                                    <p id="azul">Nenhuma é burro</p>
+                                    <p id="verde">Experiencia</p>
+                                    <ul>
+                                        <li id="azul">Nenhuma é vagabundo</li>
+                                    </ul>
+                                    <p id="verde">Links</p>
+                                </div>
+                                <footer>
+                                    <a href="https://github.com/gatinhoburro"> <img
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>
+                                </footer>
+                            </div>
     </section>
-</div>
     <script>
-        function tocaAudio(){
-            document.querySelector(".borda").style.display="flex"
+        function tocaAudio() {
+            document.querySelector("#sumir").style.display = "flex"
             document.getElementById("butao").remove()
             document.getElementById("centraliza").remove()
-        
+
         }
     </script>
 </body>

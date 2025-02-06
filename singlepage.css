@@ -1,15 +1,16 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
 }
 
 body {
     display: flex;
-    justify-content: center;
+    justify-items: flex-start;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
-    font-family: 'monocraft';
+    width: 700px;
+    padding: 30px;
+    height: 800px;
     background-image: url("End_Poem_background.png");
     background-position: center;
     background-size: center;
@@ -21,7 +22,7 @@ body {
         background-position-y: 30%;
     }
 
-    50%{
+    50% {
         background-position-y: 50%;
     }
 
@@ -31,29 +32,17 @@ body {
 
 }
 
-.borda {
+#sumir {
     display: none;
-    width: 90%;
-    max-width: 800px;
 }
 
-h1 {
-    color: rgb(33, 206, 218);
-}
-
-h5 {
-    color: #1cb857;
-}
-
-#centraliza {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100vh;
+section {
+    padding-left: 40px;
 }
 
 #butao {
+    height: 30px;
+    width: 90px;
     font-size: 12px;
     padding: 3px 4px;
     background-image: url(butao.png);
@@ -64,7 +53,55 @@ h5 {
 }
 
 #butao:hover {
-
     background-image: url(butaoclicado.png);
     border-color: #BDC6FF #59639A #59639A #BDC6FF;
+
+}
+
+header {
+    top: 0;
+    width: 500px;
+    padding-left: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#verde {
+    font-size: 15px;
+    color: #00AA00;
+}
+#azul{
+    color: #00AAAA;
+}
+h1{
+    color: #00AA00;
+}
+strong {
+    display: inline-block;
+    transform: rotate(-40deg) translateY(-3px);
+    font-size: 1.5px;
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0;
+}
+
+img {
+    width: 30px;
+}
+
+footer {
+    transform: translatey(-15px);
+    display: flex;
+}
+
+#centraliza {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
