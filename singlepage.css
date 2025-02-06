@@ -12,13 +12,17 @@ body {
     font-family: 'monocraft';
     background-image: url("End_Poem_background.png");
     background-position: center;
-    background-size: 70%;
+    background-size: center;
     animation: fundoInfinito 30s infinite ease-out;
 }
 
 @keyframes fundoInfinito {
     0% {
-        background-position-y: 0%;
+        background-position-y: 30%;
+    }
+
+    50%{
+        background-position-y: 50%;
     }
 
     100% {
@@ -28,6 +32,7 @@ body {
 }
 
 .borda {
+    display: none;
     width: 90%;
     max-width: 800px;
 }
@@ -45,6 +50,7 @@ h5 {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100vh;
 }
 
 #butao {

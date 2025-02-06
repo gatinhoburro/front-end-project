@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="singlepage.css">
-    <script>
-      window.onload = function() {
-    if (localStorage.getItem("interagiu") === "true") {
-        document.body.addEventListener("click", () => {
-            let audio = new Audio("endpoem.mp3");
-            audio.play();
-        }, { once: true }); // Garante que toca só uma vez
-    }
-};
-
-    </script>
 
 </head>
 
 <body>
-    <div class="borda">
-        <header>
-            <h1>Yuri anael ramos</h1>
-        </header>
-        <section>
-            <div>
-                <h5>Junior Frontend Developer<h5>
-            </div>
-        </section>
+    <div id="centraliza">
+        <input type="button" id="butao" name="botao" value="Começar" onclick="tocaAudio()">
     </div>
-
+<div class="borda">
+    <header>
+        <h1>Yuri anael ramos</h1>
+    </header>
+    <section>
+        <div>
+            <h5>Junior Frontend Developer<h5>
+        </div>
+    </section>
+</div>
+    <script>
+        function tocaAudio(){
+            document.querySelector(".borda").style.display="flex"
+            document.getElementById("butao").remove()
+            document.getElementById("centraliza").remove()
+        
+        }
+    </script>
 </body>
 
 </html>
